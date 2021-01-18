@@ -11,7 +11,7 @@ services:
     deploy:
       replicas: "${rep_rhsso}"
       labels:
-        traefik.frontend.rule: "Host: hofund-b2b-${ENV}.navitia.io"
+        traefik.frontend.rule: "Host: rhsso.local.io"
         traefik.enable: "true"
         traefik.backend: "rhsso_back"
         traefik.port: "8080"
@@ -31,4 +31,4 @@ services:
       - default
       # default :
       #     aliases : 
-      #       - hofund-b2b-${ENV}.navitia.io
+      #       - rhsso.local.io
