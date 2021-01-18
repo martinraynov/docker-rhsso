@@ -7,7 +7,7 @@ networks:
 
 services:
   rhsso:
-    image: docker-registry.canaltp.fr/hofund/hofund-rhsso:${TAG}
+    image: {REGISTRY}:${TAG}
     deploy:
       replicas: "${rep_rhsso}"
       labels:
