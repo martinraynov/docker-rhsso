@@ -7,7 +7,7 @@ networks:
 
 services:
   rhsso:
-    image: {REGISTRY_HOST}/hofund/hofund-rhsso:${TAG}
+    image: ${REGISTRY_HOST}/hofund/hofund-rhsso:${TAG}
     deploy:
       replicas: "${rep_rhsso}"
       labels:
