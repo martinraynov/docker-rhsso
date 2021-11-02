@@ -27,6 +27,10 @@ services:
       DB_PASSWORD: ${DB_PASSWORD}
       RHSSO_USER: ${RHSSO_USER}
       RHSSO_PASSWORD: ${RHSSO_PASSWORD}
+      # KEYCLOAK_LOGLEVEL: TRACE
+      # RHSSO_IMPORT: /tmp/test.json
+    volumes:
+      - ./profile.properties:/srv/rhsso/standalone/configuration/profile.properties:rw
     networks:
       - default
       # default :
