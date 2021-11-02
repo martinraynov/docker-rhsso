@@ -28,9 +28,10 @@ services:
       RHSSO_USER: ${RHSSO_USER}
       RHSSO_PASSWORD: ${RHSSO_PASSWORD}
       # KEYCLOAK_LOGLEVEL: TRACE
-      # RHSSO_IMPORT: /tmp/test.json
+      # RHSSO_IMPORT: ./realms/test.json
     volumes:
       - ./profile.properties:/srv/rhsso/standalone/configuration/profile.properties:rw
+      - ./upload_scripts:/srv/rhsso/standalone/deployments:rw
     networks:
       - default
       # default :
