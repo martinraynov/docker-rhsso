@@ -1,0 +1,9 @@
+{
+    "mappers": [
+        {
+            "name": "Test script mapper",
+            "fileName": "test-script-mapper.js",
+            "description": "Test mapper from a JS file"
+        }
+    ]
+}
